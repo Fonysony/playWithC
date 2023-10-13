@@ -1,0 +1,8 @@
+# Ingore all node_modules folder in Node.js
+node_modules/
+
+# Ingore all .DS_Store files
+*.DS_Store
+
+# Ingore all Visual Studio files
+.vs
