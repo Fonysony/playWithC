@@ -42,7 +42,7 @@ void print_string(char names[]) {
 }
 
 
-/* int main()
+int main()
 {
 	int binary = 0b1000001;
 	printf("This is the letter %c which is %d\n", binary, binary, binary);
@@ -174,7 +174,7 @@ void print_string(char names[]) {
 
 	// ask the user to print their age
 	printf("What is your age my dude?\n");
-	scanf_s("%d", &userAge);
+	scanf("%d", &userAge);
 
 	// print the users age
 	printf("You are %d years old!!!\n", userAge);
@@ -187,7 +187,7 @@ void print_string(char names[]) {
 	printf("What is your favorite number and character in the alphabet?\n");
 
 	// get and save the number AND character
-	scanf_s("%d %c", &userFavNum, &userFavChar);
+	scanf("%d %c", &userFavNum, &userFavChar);
 
 	// Print the users favorite number and character
 	printf("Your favorite number is %d and character is %c\n", userFavNum, userFavChar);
@@ -270,4 +270,3 @@ void print_string(char names[]) {
 	
 
 }
-*/
