@@ -6,3 +6,4 @@ node_modules/
 
 # Ingore all Visual Studio files
 .vs
+.vscode

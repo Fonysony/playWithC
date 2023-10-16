@@ -15,5 +15,8 @@ int main() {
    printf("Input working hours: ");
    scanf("%d", &worker.workHours);
    printf("Mounthly Amount: ");
-   scanf("%f", &worker.totalMonthly);
+   scanf("%d", &worker.totalMonthly);
+   worker.salary = worker.totalMonthly * worker.workHours;
+   printf("Employee ID: %d\n", worker.id);
+   printf("Salary: %f", worker.salary);
 }  
