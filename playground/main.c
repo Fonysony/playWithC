@@ -144,12 +144,12 @@ int main()
 
 	char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Memory size in bytes is 27 because it auto detects 26 characters and adds 
 														// the null terminator "\0" when using double quotes to let the complier know the string has ended
-	printf("%d\n", strlen(alphabet));   // 26
-	printf("%d\n", sizeof(alphabet));   // 27 memory size in bytes
+	printf("%zu\n", strlen(alphabet));   // 26
+	printf("%zu\n", sizeof(alphabet));   // 27 memory size in bytes
 
 	char alpha[50] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	printf("%d\n", strlen(alpha));   // 26 characters in the string
-	printf("%d\n", sizeof(alpha));   // 50 memory size in bytes
+	printf("%zu\n", strlen(alpha));   // 26 characters in the string
+	printf("%zu\n", sizeof(alpha));   // 50 memory size in bytes
 
 	char str1[10] = "Juice ";
 	char str2[10] = "WRLD";
@@ -193,20 +193,21 @@ int main()
 	printf("Your favorite number is %d and character is %c\n", userFavNum, userFavChar);
 
 	// Create a string to store what the user writes
-	int userString[20];
+	char userString[20];
 
 	// Ask the user to type something
 	printf("Type something here!!\n");
+   getchar();
 
 	// get and save the string to the variable
 	fgets(userString, sizeof(userString), stdin);
 
 	// print string length and it's byte size in memory
-	printf("Your string length is %d\n", strlen(userString));
-	printf("Your string memory size in bytes is %d", sizeof(userString));
+	printf("Your string length is %zu\n", strlen(userString));
+	printf("Your string memory size in bytes is %zu", sizeof(userString));
 
 	// print what the user typed
-	printf("The user as said \"%s\"\n Wow so smart!!\n", userString);
+	printf("The user has said %sWow so smart!!\n", userString);
 
 	// print the memory address of the users string
 	printf("Your string in memory address is %p\n", &userString);
@@ -249,7 +250,7 @@ int main()
 	printf("\n%p First element's memory address\n", &array[0]);
 
 	// get the size of the array in memory
-	printf("\nThe memory size of the array is %d\n", sizeof(array));
+	printf("\nThe memory size of the array is %lu\n", sizeof(array));
 
 	// Dereference each elemetnt's address memory to get their values
 	printf("A %p\n", &array);
